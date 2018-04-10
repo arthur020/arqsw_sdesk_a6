@@ -19,6 +19,17 @@ public class Fila {
 	@Column(name="nm_fila")
 	private String nome;
 	
+	@Size(max=256)
+	@Column(name="path_figura")
+	private String figura;
+	
+	
+	public String getFigura() {
+		return figura;
+	}
+	public void setFigura(String figura) {
+		this.figura = figura;
+	}
 	public int getId() {
 		return id;
 	}
@@ -33,6 +44,8 @@ public class Fila {
 	}
 	@Override
 	public String toString() {
-		return "Fila [id=" + id + ", nome=" + nome + "]";
+		return "Fila [id=" + id + ", nome=" + nome + ", figura=" + figura + "]";
 	}
+	
+	
 }

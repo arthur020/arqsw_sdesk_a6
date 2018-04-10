@@ -20,6 +20,7 @@ public class ChamadoDAO {
 		return chamado.getNumero();
 	}
 
+	@SuppressWarnings("unchecked")
 	public List<Chamado> listarChamadosAbertos(Fila fila) throws IOException {
 		fila = manager.find(Fila.class, fila.getId());
 		String jpql = "select c from Chamado c where c.fila = :fila and c.status = :status";
@@ -30,6 +31,7 @@ public class ChamadoDAO {
 		return result;
 	}
 
+	@SuppressWarnings("unchecked")
 	public List<Chamado> listarChamados(Fila fila) throws IOException {
 		fila = manager.find(Fila.class, fila.getId());
 		String jpql = "select c from Chamado c where c.fila = :fila";

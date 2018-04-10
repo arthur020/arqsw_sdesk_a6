@@ -14,6 +14,8 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="listar_filas_exibir">Consultar Chamados</a>
                     </li>
+                    <li><a href="listar_filas_chamado_fechar">Fechar Chamados</a>
+                    </li>
                 </ul>
             </div>
         </div>
